@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.example.jakub.kalkulator.MenuActivity"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@android:color/background_dark"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:text="Simple"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button2"
+            android:textAllCaps="false"
+            android:onClick="goSimple" />
+
+        <Button
+            android:text="Advanced"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button3"
+            android:textAllCaps="false"
+            android:onClick="goAdvanced" />
+
+        <Button
+            android:text="About"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button4"
+            android:textAllCaps="false"
+            android:onClick="goAbout" />
+
+        <Button
+            android:text="Exit"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button5"
+            android:textAllCaps="false"
+            android:onClick="goExit" />
+
+    </LinearLayout>
+</RelativeLayout>
